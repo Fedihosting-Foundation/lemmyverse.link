@@ -9,7 +9,6 @@
 // @grant        GM_setClipboard
 // @grant        GM_document
 // @grant        GM_addStyle
-// @grant        GM_getState
 // @run-at       document-start
 
 // ==/UserScript==
@@ -52,7 +51,7 @@ const add_button = () => {
         if (is_lemmy_page()) {
             add_button();
         }
-        
+
         var MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
         if( MutationObserver ){
             // define a new observer
